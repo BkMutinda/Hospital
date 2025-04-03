@@ -4,7 +4,6 @@ import Nan From "./components/Nav/nav";
 function App() {
 
   <section>
-    <Nav />
   </section>
 
 }
