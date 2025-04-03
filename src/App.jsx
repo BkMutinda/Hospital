@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      hello hospital system
+      hello hospital system.. the new repo
     </>
   )
 }
