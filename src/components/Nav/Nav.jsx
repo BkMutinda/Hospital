@@ -8,12 +8,6 @@ const Nav = () => {
         <div className="">
           Logo
         </div>
-        <div className="text-primary ">
-          Search Engine
-        </div>
-        <div className="text-secondary ">
-          Accounts
-        </div>
       </div>
     </section>
     </>
