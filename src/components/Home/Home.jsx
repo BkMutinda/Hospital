@@ -1,13 +1,20 @@
-import React from 'react'
+import React from "react";
+import Nav from "../Nav/Nav";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
 
 const Home = () => {
   return (
     <>
-    <section>
-       <p className="text-red">Hello system</p>
-    </section>
-    </>
-  )
-}
+      <section className="h-screen bg-teal-400 flex w-[80%] m-auto ">
+        <Nav />
+        <div className="">
 
-export default Home
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Home;
