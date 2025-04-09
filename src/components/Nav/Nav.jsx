@@ -10,7 +10,13 @@ const Nav = () => {
         <div className=" h-fit">
           Logo
         </div>
-        <div className="">
+        <div className=" flex justify-between w-[100px] ">
+          <button>
+            Log In
+          </button>
+          <button>
+            Sign Up
+          </button>
         </div>
       </div>
     </section>
