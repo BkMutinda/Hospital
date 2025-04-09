@@ -11,7 +11,6 @@ const Nav = () => {
           Logo
         </div>
         <div className="">
-          <FontAwesomeIcon icon={faUser} />
         </div>
       </div>
     </section>
