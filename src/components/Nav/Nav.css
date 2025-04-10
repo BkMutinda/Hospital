@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "../../index.css";
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+button{
+    @apply py-1 px-5 bg-white rounded-sm hover:bg-primary duration-300 ease-in-out cursor-pointer
+}
+ul li{
+    @apply py-1 px-2 rounded-sm hover:bg-primary  duration-100 ease-in-out cursor-pointer 
+}
