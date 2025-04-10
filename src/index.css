@@ -8,16 +8,10 @@
 
 
 @theme {
-  --color-primary: #4CC7B7; /* teal */
-  --color-secondary: #F1A7C1;  /* Pink 2 */
-  --color-tetiary: #E6E6FA; /* suggested for footer */
-  --color-tetiary1: #D8A7D7; /* Pink */
-  --color-tetiary2: #6A0DAD;  /*  Purple */
-  --color-green: #1f6b28;  /*  Purple */
-
-  --font-primary: 'Roboto';
-  --font-primary1: 'Open+Sans';
-  --font-primary2: 'Poppins';
+  --color-primary: #30A698;
+  --color-primary1: #4DB6AC;
+  --color-primary2: #009688;
+  --color-secondary: #002045;
 
 }
 

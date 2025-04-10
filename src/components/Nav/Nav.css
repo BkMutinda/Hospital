@@ -12,4 +12,5 @@ button{
 }
 ul li{
     @apply py-1 px-2 rounded-sm hover:bg-primary  duration-100 ease-in-out cursor-pointer 
+
 }
