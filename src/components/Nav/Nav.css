@@ -2,7 +2,7 @@
 @import "../../index.css";
 
 
-button{
+.btns button{
     @apply py-1 px-5 bg-white rounded-sm hover:bg-primary duration-300 ease-in-out cursor-pointer
 }
 ul li{

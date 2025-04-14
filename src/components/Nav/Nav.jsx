@@ -2,9 +2,18 @@ import React from "react";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Nav.css"
+import { useNavigate } from "react-router-dom";
 
 
 const Nav = () => {
+
+const route = useNavigate();
+const handleLogin = () => {
+  route('login');
+}
+const handleSignup = () => {
+  route('signup');
+}
   return(
     <>
     <section className="  ">
@@ -20,9 +29,9 @@ const Nav = () => {
             <li>CONTACTS</li>
           </ul>
         </div>
-        <div className=" flex gap-2">
-          <button  type="button">Sign UP</button>
-          <button type="button">Log In</button>
+        <div className="btns flex gap-2">
+          <button  type="button" onClick={handleSignup} >Sign UP</button>
+          <button type="button" onClick={handleLogin} >Log In</button>
         </div>
       </div>
     </section>

@@ -13,6 +13,7 @@
   --color-tetiary1: #D8A7D7; /* Pink */
   --color-tetiary2: #6A0DAD;  /*  Purple */
   --color-green: #1f6b28;  /*  green */
+  --color-background: #F0FDFA;
 
   --color-primary-background: #f0fdfa;
 
@@ -23,7 +24,7 @@
 }
 
 :root {
-  color: #9e9e9e;
+  color: #e4f4f5;
   background-color: #000;
 
 }

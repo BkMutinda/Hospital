@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "../../index.css";
+
+input{
+    @apply py-1 px-1 rounded-sm outline-tetiary2
+}
+label{
+    @apply font-primary2 font-semibold mt-2
+}
