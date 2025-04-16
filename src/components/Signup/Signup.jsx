@@ -11,8 +11,8 @@ const Signup = () => {
     <>
       <div className="h-screen bg-backgound flex ">
         <motion.div
-          initial={{ y: -50 }}
-          animate={{ y: 0 }}
+          initial={{ x: -50 }}
+          animate={{ x: 0 }}
           transition={{ duration: 1.0 }}
           className="border-[1px] border-gray-300 h-fit pb-5 m-auto w-[50%] mt-10 rounded-sm  "
         >
