@@ -7,6 +7,9 @@ const Signup = () => {
   const handleLogin = () => {
     route("../login");
   };
+  const handleHome = () => {
+    route("/");
+  }
   return (
     <>
       <div className="h-screen bg-backgound flex ">
@@ -81,13 +84,20 @@ const Signup = () => {
                 Log in
               </span>
             </p>
-            <div className=" ">
+            <div className="flex ">
+            <button
+                type="button"
+                className=" m-auto mt-5 flex justify-center items-center text-lg font-semibold bg-primary hover:text-white hover:bg-green py-1 px-4 rounded-md hover:cursor-pointer transition-all ease-in-out duration-500 " onClick={handleHome}
+              >
+                Cancel
+              </button>
               <button
                 type="submit"
-                className=" m-auto mt-5 flex justify-center items-center text-2xl bg-primary hover:bg-green py-1 px-4 rounded-md hover:cursor-pointer transition-all ease-in-out duration-500 "
+                className=" m-auto mt-5 flex justify-center items-center text-lg font-semibold hover:text-white bg-primary hover:bg-green py-1 px-4 rounded-md hover:cursor-pointer transition-all ease-in-out duration-500  " 
               >
                 Submit
               </button>
+
             </div>
           </form>
         </motion.div>
