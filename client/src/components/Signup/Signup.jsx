@@ -8,8 +8,8 @@ const Signup = () => {
   const [formData, setformData] = useState({
     first_name: "",
     last_name: "",
-    id_number: '',
-    email: ''
+    id_number: "",
+    email: "",
   });
 
   const [status, setStatus] = useState("");
@@ -42,41 +42,6 @@ const Signup = () => {
       setStatus("failed to submit data. Please try again");
     }
   };
-
-  // //state variables for capturing form data
-  // const [f_name, setf_Name] = useState("");
-  // const [l_name, setl_Name] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [id, setID] = useState("");
-
-  // //handle form submition
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault(); // prevent the default from submission behaviour
-
-  //   //construct payload (form data)
-  // const formData = {
-  //   f_name,
-  //   l_name,
-  //   email,
-  //   id,
-  // };
-
-  //   try {
-  //     // send request to the back end server
-  //     const response = await axios.get(
-  //       'http://localhost:5000/submit',
-  //       formData
-  //     );
-
-  //     //display success message.
-  //     // alert(response.data);
-  //     setMessage(response.data.message || "submitted succesgully");
-  //   } catch (error) {
-  //     console.error("Error submitting form", error);
-  //     alert("COOKED BRO!! there was an error submitting the form.. CHECK THAT CODE !");
-
-  //   }
-  // };
 
   const route = useNavigate();
   const handleLogin = () => {
@@ -146,23 +111,6 @@ const Signup = () => {
                 onChange={handleChange}
               />
             </div>
-            {/* <div className="flex mt-5 justify-between ">
-              <label htmlFor="password">Enter Password</label>
-              <input
-                type="password"
-                className="border-[1px] border-gray-500 rounded-sm  "
-                placeholder="Enter Password "
-              />
-            </div>
-            <div className="flex mt-5 justify-between ">
-              <label htmlFor="f_name">Confirm Pasword</label>
-              <input
-                type="text"
-                className="border-[1px] border-gray-500 rounded-sm "
-                placeholder="Confirm Password"
-              />
-            </div> */}
-            {status && <p className="text-red-700 text-lg font-semibold" >{status} </p>}
             <p className="mt-5 font-light ">
               Already have an account?{" "}
               <span
@@ -189,6 +137,9 @@ const Signup = () => {
             </div>
           </form>
         </motion.div>
+                    {status && (
+              <p className="text-red-700 text-lg font-semibold  "  >{status} </p>
+            )}
       </div>
     </>
   );
