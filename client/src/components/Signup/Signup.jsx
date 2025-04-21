@@ -53,7 +53,7 @@ const Signup = () => {
 
   return (
     <>
-      <div className="h-screen bg-backgound flex ">
+      <div className="h-screen bg-backgound flex flex-col ">
         <motion.div
           initial={{ x: -50 }}
           animate={{ x: 0 }}
@@ -76,6 +76,8 @@ const Signup = () => {
                 name="first_name"
                 value={formData.first_name}
                 onChange={handleChange}
+                autoFocus
+                required
               />
             </div>
             <div className="flex mt-5 justify-between ">
@@ -87,6 +89,7 @@ const Signup = () => {
                 name="last_name"
                 value={formData.last_name}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="flex mt-5 justify-between ">
@@ -98,6 +101,7 @@ const Signup = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
+                required
               />
             </div>
             <div className="flex mt-5 justify-between ">
@@ -109,6 +113,7 @@ const Signup = () => {
                 name="id_number"
                 value={formData.id_number}
                 onChange={handleChange}
+                required
               />
             </div>
             <p className="mt-5 font-light ">
@@ -120,6 +125,14 @@ const Signup = () => {
                 Log in
               </span>
             </p>
+            <div className="flex mt-5 ">
+              <input type="checkbox" className="bg-primary" />{" "}
+              <p className="text-sm   ">
+                I agree to{" "}
+                <span className="font-light">Terms and Conditions</span>{" "}
+                <span className="font-light"> Privacy Policy</span>{" "}
+              </p>
+            </div>
             <div className="flex ">
               <button
                 type="button"
@@ -137,9 +150,13 @@ const Signup = () => {
             </div>
           </form>
         </motion.div>
-                    {status && (
-              <p className="text-red-700 text-lg font-semibold  "  >{status} </p>
-            )}
+        <div className="">
+          {status && (
+            <p className="flex text-red-700 text-lg font-semibold  bg-primary py-2 px-2 justify-end rounded-sm w-fit ">
+              {status}{" "}
+            </p>
+          )}
+        </div>
       </div>
     </>
   );
