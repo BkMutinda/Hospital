@@ -150,11 +150,11 @@ const Signup = () => {
             </div>
           </form>
         </motion.div>
-        <div className="">
-          {status && (
-            <p className="flex text-red-700 text-lg font-semibold  bg-primary py-2 px-2 justify-end rounded-sm w-fit ">
-              {status}{" "}
-            </p>
+        <div className=" ">
+        {status && (
+            <p className="flex text-red-700 text-lg font-semibold  bg-primary mb-10 mr-5 py-2 px-2 float-right rounded-sm w-fit ">
+            {status}{" "}
+          </p>
           )}
         </div>
       </div>
