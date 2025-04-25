@@ -129,8 +129,9 @@ const Signup = () => {
               <input type="checkbox" className="bg-primary" />{" "}
               <p className="text-sm   ">
                 I agree to{" "}
-                <span className="font-light">Terms and Conditions</span>{" "}
-                <span className="font-light"> Privacy Policy</span>{" "}
+                <span className="font-light hover:cursor-pointer hover:text-green "><u>Terms and Conditions</u> </span>{" "}
+                and
+                <span className="font-light hover:cursor-pointer hover:text-green "> <u>Privacy Policy</u> </span>{" "}
               </p>
             </div>
             <div className="flex ">
