@@ -11,7 +11,6 @@ const App = () => {
   return (
     <>
       <section className=" bg-primary-background text-black ">
-        {/* <Home /> */}
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -19,7 +18,7 @@ const App = () => {
             <Route path="login" element={<Login />} />
             <Route path="signup" element={<Signup />} />
             <Route path="*" element={<PageNotFound />} />
-            <Route path="client"  element={<Client />} />
+            <Route path="Client"  element={<Client />} />
           </Routes>
         </BrowserRouter>
       </section>
