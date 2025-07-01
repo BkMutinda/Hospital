@@ -23,6 +23,18 @@ const db = mysql.createConnection({
   queueLimit: 10
 });
 
+//CONNECTION TO THE DATABASE USING A POOL
+
+// const pool = mysql.createPool({
+//   host: "localhost",
+//   user: "root",
+//   password: "Ben@sql.3612",
+//   database: "Hospital",
+//   waitForConnections: true,
+//   connectionLimit: 10,
+//   queueLimit: 10,
+// })
+
 db.connect((err) => {
   if (err) {
     console.error("❌ Error connecting to the database:", err);
@@ -52,7 +64,7 @@ app.post("/submit", async (req, res) => {
   });
 });
 
-app.post("/submit", async (req, res) => {
+app.post("/login", async (req, res) => {
 
     const {id_number, password} = req.body;
 
